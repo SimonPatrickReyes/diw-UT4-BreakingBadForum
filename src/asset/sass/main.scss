@@ -1,0 +1,77 @@
+@import 'reset';
+
+p {
+    color: rgb(0, 0, 0);
+  }
+  
+  body {
+    background: url(../images/background_pc.jpg);
+    margin: 0;
+  }
+  header {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 40px;
+    background: #122005;
+  }
+  .navegador li {
+    font-family: Archivo;
+    display: inline-flex;
+  }
+  
+  .navegador ul {
+    list-style: none;
+    font-size: 1.7em;
+    padding-left: 40px;
+    margin-top: 10px;
+  }
+  
+  .navegador a {
+    color: #d8e9da;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  nav {
+    text-align: center;
+    text-justify: auto;
+    display: flex;
+  }
+  
+  nav img {
+    width: 10%;
+    height: 10%;
+  }
+  
+  button {
+    background-image: url("../images/login_button.png");
+    background-size:contain;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+  }
+  
+  .search_bar{
+      background-color:#95B799;
+      
+  }
+
+  p{
+      font-family: Archivo;
+      font-weight: 400;
+      font-size: 1rem;
+      color:#122005;
+  }
+  
+  main{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .white_box{
+    background-color: #EFFBF3;
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  

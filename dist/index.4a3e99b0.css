@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  font: Archivo;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 4px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+p {
+  color: #000;
+}
+
+body {
+  background: url("background_pc.6dcc1f84.jpg");
+  margin: 0;
+}
+
+header {
+  background: #122005;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+}
+
+.navegador li {
+  font-family: Archivo;
+  display: inline-flex;
+}
+
+.navegador ul {
+  margin-top: 10px;
+  padding-left: 40px;
+  font-size: 1.7em;
+  list-style: none;
+}
+
+.navegador a {
+  color: #d8e9da;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  text-align: center;
+  text-justify: auto;
+  display: flex;
+}
+
+nav img {
+  width: 10%;
+  height: 10%;
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  background-image: url("login_button.3ae97381.png");
+  background-size: contain;
+  font-size: 2rem;
+}
+
+.search_bar {
+  background-color: #95b799;
+}
+
+p {
+  color: #122005;
+  font-family: Archivo;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.white_box {
+  background-color: #effbf3;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+/*# sourceMappingURL=index.4a3e99b0.css.map */
