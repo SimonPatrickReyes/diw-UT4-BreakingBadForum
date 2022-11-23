@@ -1,13 +1,11 @@
 @import "reset";
 
+
 p {
   font-family: Archivo;
   font-weight: 400;
   font-size: 26px;
   color: #122005;
-
-  grid-column-start: 3;
-  grid-row-start: 2;
 }
 
 body {
@@ -19,9 +17,13 @@ body {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 20% 6% 60%;
-  grid-template-rows: 5% 6% 7% 10% 8%;
+  display: flex;
+}
+
+.principal{
+  margin-top: 3%;
+  margin-left: 6%;
+  margin-right: 10%;
 }
 
 header {
@@ -86,65 +88,32 @@ nav input {
   margin-right: 20%;
 }
 
+section.principal{
+  align-items: center;
+  justify-items: center;
+}
+
 .white_box {
-  background-color: #effbf3;
+  width: 1100px;
   padding: 30px;
   border-radius: 8px;
+  background-color: #effbf3;
   box-shadow: 0px 5px 10px 1px rgb(92, 92, 92);
-
   text-align: justify;
   text-justify: auto;
-  grid-column-start: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
 }
 
 .white_box h2 {
   font-family: Archivo;
   font-weight: 500;
-  font-size: 2rem;
-}
-
-.new{
-  grid-column-start: 3;
-  grid-row-start:6;
-  justify-content: center;
-  align-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 1%;
 }
 
 .new img{
   justify-content: center;
   width: 100%;
 
-}
-
-.avatar{
-  border-radius: 50%;
-  border-color: #122005;
-  border-width: 3px;
-  border-style: solid;
-  vertical-align: middle;
-  
-  height: 40px;
-  width: 40px;
-}
-
-.top_members{
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-
-.top_members li{
-  margin-top: 3%;
-}
-
-.top_members span{
-  margin-left: 5px;
-}
-
-.author{
-  margin-top: 1%;
 }
 
 .author img{
@@ -173,8 +142,6 @@ h1 {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 6px;
-  grid-column-start: 3;
-  grid-row-start: 3;
 }
 
 h4{
@@ -186,16 +153,18 @@ h4{
   margin-top: 10px;
   margin-bottom: 10px;
   padding-top: 20px;
-  grid-column-start: 3;
-  grid-row-start: 5;
 }
 
+
+/*        ------GREENBOX------        */
 .green_box {
   font-family: Archivo;
+  font-weight: 500;
+
   background-color: #95b799;
   padding: 30px;
-  width: 360px;
-  height: 500px;
+  width: 650px;
+  height: 600px;
   margin-top: 20px;
   margin-left: 25px;
   border-radius: 8px;
@@ -219,21 +188,46 @@ h4{
 .green_box h3 {
   text-align: center;
   text-justify: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 6%;
+  margin-bottom: 7%;
 
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 600px;
 }
 
 .green_box div {
   display: flex;
   justify-content: space-between;
 }
-section .top_members {
-  display: block;
-  justify-content: left;
+
+.avatar{
+  border-radius: 50%;
+  border-color: #122005;
+  border-width: 4px;
+  border-style: solid;
+  vertical-align: middle;
+  
+  height: 60px;
+  width: 60px;
 }
+.top_members span{
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+.top_members{
+  list-style: none;
+}
+
+.top_members li{
+  margin-top: 3%;
+}
+
+.top_members span{
+  margin-left: 5px;
+}
+/*        ------FIN GREENBOX------        */
+
 
 /*        ------FOOTER------        */
 footer{
