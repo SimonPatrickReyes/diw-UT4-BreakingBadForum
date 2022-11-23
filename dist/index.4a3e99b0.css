@@ -96,11 +96,10 @@ section.principal {
 }
 
 .white_box {
-  width: 1100px;
-  text-align: justify;
-  text-justify: auto;
+  width: 80%;
   background-color: #effbf3;
   border-radius: 8px;
+  margin: 0 auto;
   padding: 30px;
   box-shadow: 0 5px 10px 1px #5c5c5c;
 }
