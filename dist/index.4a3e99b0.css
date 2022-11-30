@@ -1,3 +1,4 @@
+@import "https://fonts.google.com/specimen/Archivo";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -36,7 +37,7 @@ header nav .search_bar {
 
 header nav li {
   text-align: center;
-  padding: 30px;
+  padding: 15px;
   font-family: Archivo;
   font-size: 1.6em;
   font-weight: 600;
@@ -92,7 +93,6 @@ body {
 }
 
 body p {
-  color: #122005;
   font-family: Archivo;
   font-size: 26px;
   font-weight: 400;
@@ -226,6 +226,7 @@ body main .author span {
 
 body main .new img {
   width: 100%;
+  max-width: 100%;
   justify-content: center;
   margin-bottom: 10px;
 }
