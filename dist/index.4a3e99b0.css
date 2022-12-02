@@ -94,7 +94,7 @@ body {
 
 body p {
   font-family: Archivo;
-  font-size: 26px;
+  font-size: clamp(16px, 2vw, 25px);
   font-weight: 400;
 }
 
@@ -151,21 +151,32 @@ body main .green_box .avatar {
   border-radius: 50%;
 }
 
+@media (max-width: 1365px) {
+  body main .green_box .avatar {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 body main .green_box .top_members {
   list-style: none;
 }
 
 body main .green_box .top_members span {
+  margin-left: 5px;
   padding-left: 5px;
   font-size: 20px;
 }
 
-body main .green_box .top_members li {
-  margin-top: 3%;
+@media (max-width: 1365px) {
+  body main .green_box .top_members span {
+    padding-left: 5px;
+    font-size: 15px;
+  }
 }
 
-body main .green_box .top_members span {
-  margin-left: 5px;
+body main .green_box .top_members li {
+  margin-top: 3%;
 }
 
 body main .green_box span {
@@ -205,11 +216,16 @@ body main .white_box {
 body main .white_box h2 {
   margin-bottom: 1%;
   font-family: Archivo;
-  font-size: 2.5rem;
+  font-size: 2vw;
   font-weight: 500;
 }
 
-body main .author img {
+body main a {
+  color: #122005;
+  text-decoration: none;
+}
+
+body .author img {
   vertical-align: middle;
   height: 40px;
   width: 40px;
@@ -217,18 +233,23 @@ body main .author img {
   border-radius: 50%;
 }
 
-body main .author span {
+body .author span {
   margin-left: 5px;
   font-family: Archivo;
   font-size: 1em;
   font-weight: 400;
 }
 
-body main .new img {
+body .new img {
   width: 100%;
   max-width: 100%;
   justify-content: center;
   margin-bottom: 10px;
+}
+
+body .new img:hover {
+  filter: blur(2px);
+  transition: background-color .5s;
 }
 
 /*# sourceMappingURL=index.4a3e99b0.css.map */

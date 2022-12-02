@@ -8,7 +8,7 @@ body {
   p {
     font-family: Archivo;
     font-weight: 400;
-    font-size: 26px;
+    font-size: clamp(16px,2vw,25px);
   }
 
   .principal {
@@ -70,6 +70,10 @@ body {
 
         height: 60px;
         width: 60px;
+        @media (max-width: 1365px){
+          height: 50px;
+          width: 50px;
+        }
       }
 
       .top_members {
@@ -78,14 +82,15 @@ body {
         span {
           font-size: 20px;
           padding-left: 5px;
+          margin-left: 5px;
+          @media (max-width: 1365px) {
+            font-size: 15px;
+            padding-left: 5px;
+          }
         }
 
         li {
           margin-top: 3%;
-        }
-
-        span {
-          margin-left: 5px;
         }
       }
 
@@ -130,8 +135,13 @@ body {
       h2 {
         font-family: Archivo;
         font-weight: 500;
-        font-size: 2.5rem;
+        font-size: 2vw;
         margin-bottom: 1%;
+      }
+      }
+      a {
+        text-decoration: none;
+        color: #122005;
       }
     }
 
@@ -160,5 +170,10 @@ body {
       max-width: 100%;
       margin-bottom: 10px;
     }
+
+    .new img:hover {
+      filter: blur(2);         
+      transition: background-color 0.5s;
+    }
   }
-}
+
