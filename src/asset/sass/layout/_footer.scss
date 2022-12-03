@@ -1,12 +1,16 @@
 footer{
+    font-family: Archivo;
     display: flex;
     background-color: #122005;
     height: 70px;
     width: 100%;
     margin: 0%;
+    bottom: 0%;
 
+    position: fixed;
     align-items: center;
     justify-content: center;
+    
 
     p {
       color: #d8e9da;
@@ -14,4 +18,5 @@ footer{
       font-size: 1rem;
       font-weight: 100;
     }
+
   }

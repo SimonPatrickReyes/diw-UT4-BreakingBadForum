@@ -4,16 +4,55 @@ header {
     padding-left: 40px;
     background: #122005;
 
-    nav {
+  .mobile_nav{
+    position:relative;
+  
+    .toggle-menu{
+      position: absolute;
+      right: 0rem;
+      width: 40px;
+      cursor: pointer;
+    }
+
+    .main-menu{
+      font-family: Archivo;
+      list-style:none;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0;
+    
+      
+
+      .main-menu__link{
+        color: #95b799;
+        text-decoration: none;
+      }
+
+      .main-menu__item{
+        padding: 0.5em;
+      }
+      @media (min-width: 640px) {
+        display: none;
+      }
+    }
+    }
+
+    .nav_pc{
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media (max-width: 640px) {
+        display: none;
+      }
 
       .search_bar {
         background-color: #95b799;
         width: 10%;
         margin-left: 1%;
         margin-right: 20%;
+        @media (max-width: 640px) {
+          display: none;
+        }
       }
 
       li {
@@ -26,6 +65,9 @@ header {
 
         list-style: none;
         text-align: center;
+        @media (max-width: 640px) {
+          display: none;
+        }
       }
 
       a:hover {
@@ -39,6 +81,9 @@ header {
         color: #d8e9da;
         list-style: none;
         text-decoration: none;
+        @media (max-width: 640px) {
+          display: none;
+        }
       }
 
       > img {
