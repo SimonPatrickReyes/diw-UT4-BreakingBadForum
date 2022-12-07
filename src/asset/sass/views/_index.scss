@@ -216,6 +216,11 @@ body {
         display: block;
       }
     }
-   
+    @media (max-width: 640px) {
+      background: url(../images/background_phone.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover; 
+    }
   }
 

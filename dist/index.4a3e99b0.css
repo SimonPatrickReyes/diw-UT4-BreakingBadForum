@@ -22,53 +22,79 @@ header {
   padding-left: 40px;
 }
 
-header .mobile_nav {
+header .mobile-nav {
+  height: 20px;
   position: relative;
 }
 
-header .mobile_nav .toggle-menu {
+header .mobile-nav .toggle-menu {
   width: 40px;
   cursor: pointer;
   position: absolute;
   right: 0;
 }
 
-header .mobile_nav .main-menu {
+header .mobile-nav .main-menu {
+  text-align: center;
+  background-color: #d8e9da;
+  flex-direction: column;
+  align-items: flex-end;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
   font-family: Archivo;
+  font-size: 2rem;
   list-style: none;
+  position: fixed;
+  top: 2rem;
+  right: 0%;
 }
 
-header .mobile_nav .main-menu .main-menu__link {
-  color: #95b799;
+header .mobile-nav .main-menu .main-menu__link {
+  color: #122005;
+  width: 100%;
+  padding: 0;
   text-decoration: none;
+  display: inline-block;
 }
 
-header .mobile_nav .main-menu .main-menu__item {
+header .mobile-nav .main-menu .main-menu__item {
   padding: .5em;
 }
 
 @media (min-width: 640px) {
-  header .mobile_nav .main-menu {
+  header .mobile-nav .main-menu {
     display: none;
   }
 }
 
-header .nav_pc {
+header .mobile-nav .main-menu .main-menu__item:hover {
+  background-color: #122005;
+}
+
+header .mobile-nav .main-menu .main-menu__item:hover .main-menu__link {
+  color: #95b799;
+}
+
+@media (min-width: 640px) {
+  header .mobile-nav {
+    display: none;
+  }
+}
+
+header .nav-pc {
   justify-content: space-between;
   align-items: center;
   display: flex;
 }
 
 @media (max-width: 640px) {
-  header .nav_pc {
+  header .nav-pc {
     display: none;
   }
 }
 
-header .nav_pc .search_bar {
+header .nav-pc .search_bar {
   width: 10%;
   background-color: #95b799;
   margin-left: 1%;
@@ -76,55 +102,55 @@ header .nav_pc .search_bar {
 }
 
 @media (max-width: 640px) {
-  header .nav_pc .search_bar {
+  header .nav-pc .search_bar {
     display: none;
   }
 }
 
-header .nav_pc li {
+header .nav-pc .nav-pc__li {
   text-align: center;
   padding: 15px;
   font-family: Archivo;
-  font-size: 1.6em;
+  font-size: 1.5vw;
   font-weight: 600;
   list-style: none;
   display: inline-flex;
 }
 
 @media (max-width: 640px) {
-  header .nav_pc li {
+  header .nav-pc .nav-pc__li {
     display: none;
   }
 }
 
-header .nav_pc a:hover {
+header .nav-pc a:hover {
   color: #fff;
   transition: scale .8s;
   scale: 1.2;
 }
 
-header .nav_pc a {
+header .nav-pc a {
   color: #d8e9da;
   text-decoration: none;
   list-style: none;
 }
 
 @media (max-width: 640px) {
-  header .nav_pc a {
+  header .nav-pc a {
     display: none;
   }
 }
 
-header .nav_pc > img {
+header .nav-pc > img {
   width: 10%;
 }
 
-header .nav_pc > img:hover {
+header .nav-pc > img:hover {
   transition: scale .8s;
   scale: 1.1;
 }
 
-header .nav_pc input {
+header .nav-pc input {
   width: 80%;
 }
 
@@ -358,6 +384,10 @@ body .new_mobile {
 @media (max-width: 640px) {
   body .new_mobile {
     display: block;
+  }
+
+  body {
+    background: url("background_phone.4dd673b2.png") 0 0 / cover no-repeat fixed;
   }
 }
 
