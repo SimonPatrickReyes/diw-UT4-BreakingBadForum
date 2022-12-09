@@ -403,6 +403,14 @@ body .new_mobile {
   display: block;
 }
 
+.threads .custom_select {
+  color: #fff;
+  background-color: #95b799;
+  border: 0;
+  font-family: Archivo;
+  text-decoration: none;
+}
+
 .threads .threads__ul {
   color: #95b799;
 }
@@ -435,6 +443,39 @@ body .new_mobile {
   background-color: #95b799;
   margin-left: 1%;
   margin-right: 20%;
+}
+
+.characters {
+  display: contents;
+}
+
+.characters .char__images {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  padding-left: 250px;
+  padding-right: 250px;
+  display: flex;
+}
+
+.characters .char__images img {
+  margin: 5px 7px;
+}
+
+.characters .char__images img:hover {
+  filter: blur(2px);
+  filter: brightness(30);
+  filter: contrast(1.5);
+  background-color: #f0f8ff;
+  transition: background-color .5s;
+}
+
+.characters .char__tittle {
+  text-align: center;
+  margin-top: 20px;
+  font-family: Archivo;
+  font-size: 4vw;
+  display: block;
 }
 
 /*# sourceMappingURL=index.4a3e99b0.css.map */

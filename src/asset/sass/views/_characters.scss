@@ -1,0 +1,32 @@
+.characters {
+  display: contents;
+
+  .char__images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding-left: 250px;
+    padding-right: 250px;
+
+    img {
+      margin: 5 7;
+    }
+
+    img:hover {
+      filter: blur(2);
+      filter: brightness(30);
+      filter:contrast(1.5);
+      background-color: aliceblue;
+      transition: background-color 0.5s;
+    }
+  }
+
+  .char__tittle {
+    display: block;
+    text-align: center;
+    font-size: 4vw;
+    font-family: Archivo;
+    margin-top: 20px;
+  }
+}
