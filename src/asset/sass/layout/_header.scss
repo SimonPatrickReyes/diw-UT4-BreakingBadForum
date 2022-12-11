@@ -5,20 +5,28 @@ header {
   background: #122005;
 
   .mobile-nav {
+    display: flex;
     position: relative;
-    height: 20px;
+    height: 1.25rem;
+    justify-content: space-between;
 
     .toggle-menu {
-      position: absolute;
       right: 0rem;
-      width: 40px;
+      width: 2.5rem;
       cursor: pointer;
       z-index: 1;
     }
-    /*.main-menu--show{
-      transform: translateY(0);
-      display: block;
-    }*/
+
+    .login_button img{
+      height: 1.25rem;
+    }
+    .mobile_right{
+      display:inline-flex;
+      align-items: center;
+      column-gap: 1.25rem;
+    }
+    
+    
     .main-menu {
       font-family: Archivo;
       font-size: 2rem;
@@ -67,12 +75,12 @@ header {
   }
 
   .nav-pc {
-    height: 120px;
+    height: 7.5rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     
-    @media (max-width: 870px) {
+    @media (max-width: 54.375rem) {
       display: none;
     }
 
@@ -82,7 +90,7 @@ header {
 
     .search_bar {
       background-color: #95b799;
-      height: 32px;
+      height: 2rem;
       width: 14%;
       margin-left: 1%;
       margin-right: 1%;
@@ -93,14 +101,18 @@ header {
 
     .nav-pc__li {
       font-family: Archivo;
-      font-size: 1.8vw;
+      font-size: 1.9vw;
       font-weight: 600;
 
       display: inline-flex;
-      padding: 30px;
+      padding: 1.875rem;
 
       list-style: none;
       text-align: center;
+      @media (max-width: 1080px) {
+        font-size: 1.6vw;
+      }
+
       @media (max-width: 870px) {
         display: none;
       }

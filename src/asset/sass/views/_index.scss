@@ -4,27 +4,34 @@ body {
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
+  height: 100vh;
 
   .principal {
     margin-top: 3%;
     margin-left: 6%;
     margin-right: 10%;
 
-    .logo2{
+    .logo2 {
       margin: auto;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
       display: block;
+
       @media (min-width: 870px) {
         display: none;
       }
     }
-    
+
   }
+
   /*-----------MAIN-----------*/
 
   main {
     display: flex;
+    height: 100vh;
+    margin-bottom: 150px;
+    
+
 
     .popular {
       font-family: Archivo;
@@ -32,12 +39,13 @@ body {
       font-size: 2em;
 
       text-align: center;
-      margin-top: 30px;
-      margin-bottom: 12px;
+      margin-top: 1.875rem;
+      margin-bottom: 0.75rem;
+
       @media (max-width: 870px) {
         display: none;
       }
-      
+
     }
 
     .news_header {
@@ -46,9 +54,9 @@ body {
       font-size: 3em;
 
       text-align: center;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      
+      margin-top: 0.9375rem;
+      margin-bottom: 0.9375rem;
+
 
       @media (min-width: 870px) {
         text-transform: uppercase;
@@ -60,13 +68,13 @@ body {
       font-weight: 500;
 
       background-color: #95b799;
-      padding: 30px;
-      width: 610px;
-      height: 600px;
-      margin-top: 20px;
-      margin-left: 25px;
-      border-radius: 8px;
-      box-shadow: 0px 0px 30px 0.5px rgb(92, 92, 92);
+      padding: 0.625rem 1.875rem 1.875rem 1.875rem;
+      width: 38.125rem;
+      height: 37.5rem;
+      margin-top: 1.25rem;
+      margin-left: 1.5625rem;
+      border-radius: 0.5rem;
+      box-shadow: 0rem 0rem 1.875rem 0.0313rem rgb(92, 92, 92);
 
       text-align: justify;
       text-justify: auto;
@@ -80,25 +88,26 @@ body {
       .avatar {
         border-radius: 50%;
         border-color: #122005;
-        border-width: 4px;
+        border-width: 0.25rem;
         border-style: solid;
         vertical-align: middle;
 
         height: 3vw;
         width: 3vw;
-       
+
       }
 
       .top_members {
         list-style: none;
 
         span {
-          font-size: 20px;
-          padding-left: 8px;
-          margin-left: 5px;
+          font-size: 1.25rem;
+          padding-left: 0.5rem;
+          margin-left: 0.3125rem;
+
           @media (max-width: 1365px) {
             font-size: 1vw;
-            padding-left: 5px;
+            padding-left: 0.3125rem;
           }
         }
 
@@ -118,14 +127,18 @@ body {
       }
 
       h3 {
-        font-size: 2vw;
         text-align: center;
         text-justify: auto;
-        margin-top: 6%;
-        margin-bottom: 7%;
+        margin-top: 5%;
+        margin-bottom: 6%;
+        padding-top: 4%;
 
-        font-size: 1.5rem;
-        font-weight: 600px;
+        font-size: 1.8rem;
+        font-weight: 37.5rem;
+
+        @media (max-width: 1500px) {
+          font-size: 1.2rem;
+        }
       }
 
       div {
@@ -134,34 +147,45 @@ body {
       }
     }
 
-    section{ 
-       
-      .intro{
-          font-family: Archivo;
-          font-weight: 400;
-          font-size: clamp(16px,2vw,25px);
-          text-align:justify;
-      }
-      .section__text{
+    section {
+
+      .intro {
         font-family: Archivo;
-        font-size: 14px;
+        font-weight: 400;
+        font-size: clamp(1rem, 2vw, 1.5625rem);
+        text-align: justify;
+      }
+
+      .section__text {
+        font-family: Archivo;
+        font-size: 0.875rem;
         text-align: center;
-        margin-bottom: 5px;
-        
+        margin-bottom: 0.3125rem;
+
         @media (min-width: 870px) {
           display: none;
         }
       }
-    
+
+      .section__text2 {
+        font-family: Archivo;
+        font-size: 1.6vw;
+        text-align: center;
+        margin-bottom: 0.3125rem;
+
+        
+      }
+
     }
 
     .white_box {
       width: 80%;
       margin: 0 auto;
-      padding: 30px;
-      border-radius: 8px;
+      padding: 1.875rem;
+      border-radius: 0.5rem;
       background-color: #effbf3;
-      box-shadow: 0px 5px 10px 1px rgb(92, 92, 92);
+      box-shadow: 0rem 0.3125rem 0.625rem 0.0625rem rgb(92, 92, 92);
+
       @media (max-width: 870px) {
         display: none;
       }
@@ -172,55 +196,59 @@ body {
         font-size: 2vw;
         margin-bottom: 1%;
       }
-      }
-      a {
-        text-decoration: none;
-        color: #122005;
-      }
     }
 
-    .author {
-      img {
-        border-radius: 50%;
-        border-color: #122005;
-        border-width: 3px;
-        border-style: solid;
-        vertical-align: middle;
-
-        height: 40px;
-        width: 40px;
-      }
-
-      span {
-        font-family: Archivo;
-        font-weight: 400;
-        font-size: 1em;
-        margin-left: 5px;
-      }
-    }
-    .new img {
-      justify-content: center;
-      width: 100%;
-      max-width: 100%;
-      margin-bottom: 5px;
-    }
-
-    .new img:hover {
-      filter: blur(2);         
-      transition: background-color 0.5s;
-    }
-
-    .new_mobile{
-      display:none;
-      @media (max-width: 870px) {
-        display: block;
-      }
-    }
-    @media (max-width: 870px) {
-      background: url(../images/background_phone.png);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover; 
+    a {
+      text-decoration: none;
+      color: #122005;
     }
   }
 
+  .author {
+    img {
+      border-radius: 50%;
+      border-color: #122005;
+      border-width: 0.1875rem;
+      border-style: solid;
+      vertical-align: middle;
+
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
+    span {
+      font-family: Archivo;
+      font-weight: 400;
+      font-size: 1em;
+      margin-left: 0.3125rem;
+    }
+  }
+
+  .new img {
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0.3125rem;
+
+  }
+
+  .new img:hover {
+    filter: blur(2);
+    transition: background-color 0.5s;
+  }
+
+  .new_mobile {
+    display: none;
+
+    @media (max-width: 870px) {
+      display: block;
+    }
+  }
+
+  @media (max-width: 870px) {
+    background: url(../images/background_phone.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
