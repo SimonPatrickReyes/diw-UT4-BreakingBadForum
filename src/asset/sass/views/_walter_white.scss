@@ -1,9 +1,43 @@
-.ww_text{
+.character__text{
     text-align: justify;
+    font-family: Archivo;
+    margin-top: 25px;
 }
 
-.ww_img img{
-    margin: auto;
-    display: block;
+.character__profile{
+    display:inline;
     padding: 0 auto;
+    width: 0;
+    align-items: center;
+    cursor: default;
+    
+    .character__profile img{
+        display: flex;
+        align-self: center;
+        vertical-align: middle;
+        height: auto;
     }
+}
+
+.character__card{
+    width: 70%;
+    margin: 3% auto;
+    padding: 1.875rem;
+    border-radius: 0.5rem;
+    background-color: #effbf3;
+    box-shadow: 0rem 0.3125rem 0.625rem 0.0625rem rgb(92, 92, 92);
+}
+
+.character__aside{
+    display:flex;
+    width: 25%;
+    height: 40%;
+    margin: 3% auto;
+    padding: 1.875rem;
+    border-radius: 0.5rem;
+    background-color: #effbf3;
+    box-shadow: 0rem 0.3125rem 0.625rem 0.0625rem rgb(92, 92, 92);
+    align-items: center;
+   
+}
+ 

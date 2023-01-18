@@ -728,6 +728,48 @@ body {
   }
 }
 
+.character__text {
+  text-align: justify;
+  margin-top: 25px;
+  font-family: Archivo;
+}
+
+.character__profile {
+  width: 0;
+  cursor: default;
+  align-items: center;
+  padding: 0 auto;
+  display: inline;
+}
+
+.character__profile .character__profile img {
+  vertical-align: middle;
+  height: auto;
+  align-self: center;
+  display: flex;
+}
+
+.character__card {
+  width: 70%;
+  background-color: #effbf3;
+  border-radius: .5rem;
+  margin: 3% auto;
+  padding: 1.875rem;
+  box-shadow: 0 .3125rem .625rem .0625rem #5c5c5c;
+}
+
+.character__aside {
+  width: 25%;
+  height: 40%;
+  background-color: #effbf3;
+  border-radius: .5rem;
+  align-items: center;
+  margin: 3% auto;
+  padding: 1.875rem;
+  display: flex;
+  box-shadow: 0 .3125rem .625rem .0625rem #5c5c5c;
+}
+
 .episodes {
   flex-direction: column;
   display: flex;
