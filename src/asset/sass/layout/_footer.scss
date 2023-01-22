@@ -1,0 +1,55 @@
+footer {
+  font-family: Archivo;
+  display: flex;
+  background-color: #122005;
+  height: 70px;
+  width: 100%;
+  margin-top: 3.125rem;
+  bottom:0;
+  
+  
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1175px) {
+    display: none;
+  }
+
+  .new {
+    width: 10%;
+  }
+
+  .social_media {
+    display:flex;
+    position: absolute;
+    right: 0;
+    
+    @media (max-width: 1280px) {
+      display: none;
+    }
+    
+  
+    
+    img {
+      padding-left: .3125rem;
+    }
+  }
+
+  p {
+    color: #d8e9da;
+    font-size: 1rem;
+    font-weight: 100;
+
+    @media (max-width: 870px) {
+      font-size: .9375rem;
+    }
+  }
+  .contact{
+    text-decoration: none;
+    color: #d8e9da;
+    font-weight: 200;
+    display:flex;
+    position: absolute;
+    left: 150;
+  }
+}

@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-login_contact{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 23rem;
+    background-color: #95b799;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 11.25rem;
+    box-shadow: 17px 10px 8px #12200594;
+    padding: 2rem 0rem 2rem 0rem;
+    border-radius: 2rem;
+    color:#122005;
+    align-content: center;
+    flex-wrap:wrap;
+    @media (max-width: 700px) {
+        width: 85vw;
+        height: 23rem;
+      }
+
+      @media (max-width: 460px) {
+        width: 85vw;
+        height: 105vw;
+      }
+}
+
+.select{
+    width: 100%;
+    border: 2px solid #122005;
+    margin-bottom: 0.9375rem;
+    padding: 11px 10px;
+    background: #d8e9da;
+    font-size: 0.975rem;
+    font-weight: bold;
+
+}
+
+.controls{
+    width: 100%;
+    border: 2px solid #122005;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #d8e9da;
+    font-size: 0.975rem;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    font-family: Archivo;
+    margin:5px;
+    width: 5rem;
+    background-color: #122005;
+    color: #95b799;
+    font-weight: 600;
+    font-family: Archivo;
+    font-size: 1rem;
+    padding: 0.4em 0.5em;
+    border-radius: 0.625rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-login_contact p{
+    height: 40px;
+    text-align: center;
+    font-family: Archivo;
+    font-style: oblique;
+    @media (max-width: 460px) {
+        font-size: 3.5vw;
+    
+      }
+    
+}
+
+.form-login_contact h5{
+    font-family: Archivo;
+    margin: 0;
+    text-align: center;
+    height: 1.25rem;
+    margin-bottom: 1.8rem;
+    font-size: 2.25rem;
+    @media (max-width: 460px) {
+        font-size: 6vw;
+    
+      }
+}
+
+.form-login_contact a{
+    margin-top: 1rem;
+    align-self: center;
+    font-size: 17px;
+    font-family: Archivo;
+    text-decoration: none;
+    text-shadow: 1px 1px 4px #122005;
+
+    color: #122005;
+    
+    
+}
+
+.form-login_contact textarea{
+    width:500px;
+    height:150px;
+
+    border-radius: 1rem;
+    padding:0.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Archivo;
+    @media (max-width: 700px) {
+        width: 75vw;
+      }
+    
+      @media (max-width: 460px) {
+        width: 55vw;
+        height:18vw;
+        font-size: 4vw;
+      }
+    
+}
+
+.form-login_contact a:hover{
+    text-decoration: underline;
+}

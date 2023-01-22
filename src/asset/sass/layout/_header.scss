@@ -1,0 +1,150 @@
+header {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 40px;
+  background: #122005;
+
+  .mobile-nav {
+    display: flex;
+    position: relative;
+    height: 1.25rem;
+    justify-content: space-between;
+
+    .toggle-menu {
+      right: 0rem;
+      width: 2.5rem;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .login_button img{
+      height: 1.25rem;
+    }
+    .mobile_right{
+      display:inline-flex;
+      align-items: center;
+      column-gap: 1.25rem;
+    }
+    
+    
+    .main-menu {
+      font-family: Archivo;
+      font-size: 2rem;
+      list-style: none;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0;
+      
+      position: fixed;
+      background-color: #d8e9da;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: center;
+      right: 0%;
+      top: 2.5rem;
+      display:none;
+      
+      
+      .main-menu__link {
+        color: #122005;
+        text-decoration: none;
+        padding: 0;
+        width: 100%;
+        display: inline-block;
+      } 
+      .main-menu__item {
+        padding: 0.5em;
+      }
+      @media (min-width: 870px) {
+        display: none;
+      }
+      
+      .main-menu__item:hover {
+        background-color: #122005;
+        .main-menu__link{
+          color: #95b799;
+        }
+        
+      }
+    }
+    
+
+    @media (min-width: 870px) {
+      display: none;
+    }
+  }
+
+  .nav-pc {
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    @media (max-width: 54.375rem) {
+      display: none;
+    }
+
+    .logo{
+      width: 15%;
+    }
+
+    .search_bar {
+      background-color: #95b799;
+      height: 2rem;
+      width: 14%;
+      margin-left: 1%;
+      margin-right: 1%;
+      @media (max-width: 870px) {
+        display: none;
+      }
+    }
+
+    .nav-pc__li {
+      font-family: Archivo;
+      font-size: 1.9vw;
+      font-weight: 600;
+
+      display: inline-flex;
+      padding: 1.875rem;
+
+      list-style: none;
+      text-align: center;
+      @media (max-width: 1080px) {
+        font-size: 1.6vw;
+      }
+
+      @media (max-width: 870px) {
+        display: none;
+      }
+    }
+
+    a:hover {
+      scale: 1.2;
+      color: #ffffff;
+      transition: color 2.7s;
+      transition: scale 0.8s;
+    }
+
+    a {
+      color: #d8e9da;
+      list-style: none;
+      text-decoration: none;
+      @media (max-width: 870px) {
+        display: none;
+      }
+    }
+
+    > img {
+      width: 10%;
+    }
+
+    > img:hover {
+      scale: 1.1;
+      transition: scale 0.8s;
+    }
+
+    input {
+      width: 80%;
+    }
+  }
+}
